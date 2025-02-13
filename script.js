@@ -5,7 +5,7 @@ document.getElementById('surveyForm').addEventListener('submit', function (e) {
     const suggestions = document.getElementById('suggestions').value;
 
     // **IMPORTANT: Replace with your actual Google Sheets API URL from Step 2**
-    const googleSheetsUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6MmfecJjd3Rjae9XmhxsPryLpZHI1qn-mPzYO-Ps5CdwbOU0SZCp9CoICNkWC4Pm24fAB9rDCZIvW/pub?output=csv";
+    const googleSheetsUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6MmfecJjd3Rjae9XmhxsPryLpZHI1qn-mPzYO-Ps5CdwbOU0SZCp9CoICNkWC4Pm24fAB9rDCZIvW/pub?gid=0&single=true&output=csv";
 
     // Construct the data string in CSV format (Email,Suggestions)
     const csvData = `Email,Suggestions\n"${email}","${suggestions}"`; // CSV with headers
